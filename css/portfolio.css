@@ -1,0 +1,53 @@
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Umožní presunutie obrázkov do nového riadku, keď je to potrebné */
+  justify-content: space-between; /* Rozmiestni obrázky rovnomerne */
+  gap: 20px; /* Medzera medzi obrázkami */
+}
+
+/* Nastavenie pre jednotlivé portfólio obrázky */
+.portfolio {
+  width: 48%; /* Obrázky budú mať šírku 48% z dostupného priestoru, čo znamená, že budú dva vedľa seba */
+  height: 250px; /* Nastav výšku obrázkov podľa potreby */
+  max-width: 100%; /* Obmedzenie maximálnej šírky */
+  background-size: cover; /* Zabezpečí, že obrázok vyplní celý rámik bez deformácií */
+  background-position: center; /* Zarovná obrázok na stred */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5); /* Polopriesvitné pozadie pre text */
+  background-blend-mode: darken; /* Tmavší efekt pozadia */
+  transition: background-color 0.3s ease; /* Prechod pre efekt hover */
+}
+
+/* Efekt pri hoveri */
+.portfolio:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Svetlý efekt pri hoveri */
+  background-blend-mode: lighten; /* Rozjasní pozadie pri hoveri */
+}
+
+#portfolio-1 {
+  background-image: url('img/portfolio1.jpg');
+}
+#portfolio-2 {
+  background-image: url('img/portfolio2.jpg');
+}
+#portfolio-3 {
+  background-image: url('img/portfolio3.jpg');
+}
+#portfolio-4 {
+  background-image: url('img/portfolio4.jpg');
+}
+#portfolio-5 {
+  background-image: url('img/portfolio5.jpg');
+}
+#portfolio-6 {
+  background-image: url('img/portfolio6.jpg');
+}
+#portfolio-7 {
+  background-image: url('img/portfolio7.jpg');
+}
+#portfolio-8 {
+  background-image: url('img/portfolio8.jpg');
+}
